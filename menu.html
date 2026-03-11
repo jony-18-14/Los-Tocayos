@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú | Los Tres Tocayos</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+background:#0c0c0c;
+color:white;
+}
+
+/* HEADER */
+
+header{
+background:#111;
+padding:15px;
+display:flex;
+align-items:center;
+gap:10px;
+box-shadow:0 3px 10px black;
+flex-wrap:wrap;
+border-bottom:2px solid #ff7b00;
+}
+
+header img{
+width:50px;
+height:50px;
+border-radius:50%;
+border:2px solid #ff7b00;
+object-fit:cover;
+}
+
+.header-text{
+display:flex;
+flex-direction:column;
+flex-grow:1;
+}
+
+header h1{
+font-size:1.4rem;
+color:#ff7b00;
+text-shadow:0 0 5px #ff4d00;
+}
+
+.horario{
+font-size:0.9rem;
+color:#ff9a2f;
+margin-top:3px;
+}
+
+.horario span{
+color:#ff4d00;
+font-weight:bold;
+}
+
+/* MENU */
+
+.menu{
+width:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:25px;
+padding:25px 0 40px 0;
+}
+
+/* CARD */
+
+.card{
+width:90%;
+max-width:450px;
+background:#161616;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(255,100,0,0.2);
+border:1px solid #333;
+transition:transform 0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(255,100,0,0.4);
+}
+
+/* CONTENEDOR DE IMAGEN (50% MÁS GRANDE) */
+
+.img-container{
+width:100%;
+height:255px;
+overflow:hidden;
+background:#222;
+display:flex;
+align-items:center;
+justify-content:center;
+border-bottom:3px solid #ff7b00;
+}
+
+/* IMAGEN */
+
+.img-container img{
+width:90%;
+height:90%;
+object-fit:cover;
+object-position:center;
+display:block;
+}
+
+/* INFO */
+
+.info{
+padding:18px;
+}
+
+/* TITULO */
+
+.nombre{
+font-size:1.3rem;
+font-weight:bold;
+color:#ff8a2a;
+margin-bottom:8px;
+text-shadow:0 0 3px #ff4d00;
+}
+
+/* DESCRIPCION */
+
+.desc{
+font-size:0.95rem;
+color:#ddd;
+margin-bottom:18px;
+line-height:1.5;
+padding-left:5px;
+border-left:3px solid #ff7b00;
+}
+
+/* BOTON */
+
+.btn{
+display:block;
+width:100%;
+background:linear-gradient(#ff9a2f,#ff4d00);
+border:none;
+padding:14px;
+border-radius:50px;
+font-weight:bold;
+cursor:pointer;
+color:#2b0d00;
+text-align:center;
+text-decoration:none;
+font-size:1.05rem;
+letter-spacing:1px;
+transition:all 0.3s;
+box-shadow:0 4px 0 #7a2f00;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+background:linear-gradient(#ffaa4f,#ff6e2f);
+box-shadow:0 6px 0 #7a2f00, 0 0 15px #ff6600;
+}
+
+.btn:active{
+transform:translateY(4px);
+box-shadow:0 2px 0 #7a2f00;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="Imagenes/LOGO.jpeg">
+
+<div class="header-text">
+<h1>🔥 LOS TOCAYOS 🔥</h1>
+
+<div class="horario">
+⏰ Abierto: <span>5:00 PM - 11:00 PM</span> (Solo Domingos)
+</div>
+
+</div>
+
+</header>
+
+<div class="menu">
+
+<!-- CHURRASQUITO NORMAL -->
+
+<div class="card">
+
+<div class="img-container">
+<img src="Imagenes/churrasquitoDE20.jpeg">
+</div>
+
+<div class="info">
+
+<div class="nombre">🥩 Churrasquito Normal Q20.00</div>
+
+<div class="desc">
+<strong>Incluye:</strong><br>
+• Guacamole 🥑<br>
+• Repollo con mayonesa 🥗<br>
+• Chirmol 🍅<br>
+• 3 tortillas 🌮
+</div>
+
+<a class="btn"
+href="https://wa.me/50238608047?text=Quisiera%20pedir%20el%20Churrasquito%20Normal%20a%20Q20.00%20por%20favor."
+target="_blank">
+
+📱 Pedir por WhatsApp
+
+</a>
+
+</div>
+</div>
+
+<!-- CHURRASQUITO VIUDA -->
+
+<div class="card">
+
+<div class="img-container">
+<img src="Imagenes/churrasquitodeviudaDE30.jpeg">
+</div>
+
+<div class="info">
+
+<div class="nombre">🍖 Churrasquito con Viuda Q30.00</div>
+
+<div class="desc">
+<strong>Incluye:</strong><br>
+• Frijol volteado 🫘<br>
+• Guacamole 🥑<br>
+• Coditos 🍝<br>
+• Chirmol 🍅<br>
+• 3 tortillas 🌮
+</div>
+
+<a class="btn"
+href="https://wa.me/50238608047?text=Quisiera%20pedir%20el%20Churrasquito%20con%20Viuda%20a%20Q30.00%20por%20favor."
+target="_blank">
+
+📱 Pedir por WhatsApp
+
+</a>
+
+</div>
+</div>
+
+<!-- COSTILLA -->
+
+<div class="card">
+
+<div class="img-container">
+<img src="Imagenes/costillaBBDe30.jpg">
+</div>
+
+<div class="info">
+
+<div class="nombre">🍖 Costilla a la Barbacoa Q30.00</div>
+
+<div class="desc">
+<strong>Incluye:</strong><br>
+• Papas fritas 🍟<br>
+• 3 tortillas 🌮<br>
+• Salsa BBQ 🍯
+</div>
+
+<a class="btn"
+href="https://wa.me/50238608047?text=Quisiera%20pedir%20la%20Costilla%20a%20la%20Barbacoa%20a%20Q30.00%20por%20favor."
+target="_blank">
+
+📱 Pedir por WhatsApp
+
+</a>
+
+</div>
+</div>
+
+<!-- AZULINO -->
+
+<div class="card">
+
+<div class="img-container">
+<img src="Imagenes/asulinoSinalcoholDE22.jpeg">
+</div>
+
+<div class="info">
+
+<div class="nombre">🥤 Azulino Q22.00</div>
+
+<div class="desc">
+<strong>Bebida refrescante:</strong><br>
+• Sabor a frutos azules 🫐<br>
+• Sin alcohol 🚫🍺<br>
+• Hielo y limón 🍋
+</div>
+
+<a class="btn"
+href="https://wa.me/50238608047?text=Quisiera%20pedir%20un%20Azulino%20a%20Q22.00%20por%20favor."
+target="_blank">
+
+📱 Pedir por WhatsApp
+
+</a>
+
+</div>
+</div>
+
+<!-- STRAWBERRY -->
+
+<div class="card">
+
+<div class="img-container">
+<img src="Imagenes/straberryDe22.jpeg">
+</div>
+
+<div class="info">
+
+<div class="nombre">🍓 Strawberry Q22.00</div>
+
+<div class="desc">
+<strong>Bebida refrescante:</strong><br>
+• Sabor a fresa 🍓<br>
+• Sin alcohol 🚫🍺<br>
+• Hielo y limón 🍋
+</div>
+
+<a class="btn"
+href="https://wa.me/50238608047?text=Quisiera%20pedir%20un%20Straberry%20a%20Q22.00%20por%20favor."
+target="_blank">
+
+📱 Pedir por WhatsApp
+
+</a>
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
